@@ -6,53 +6,53 @@ Ce repository contient deux projets basés sur la **vision par ordinateur** perm
 
 Les deux scripts utilisent **OpenCV** pour la capture vidéo et **MediaPipe Hands** pour la détection des points clés de la main.
 
-## 🎯 Objectifs du projet
+##  Objectifs du projet
 
 - Comprendre le fonctionnement de **MediaPipe Hands**
 - Manipuler les **landmarks** (points clés) de la main
 - Appliquer la vision par ordinateur à une interaction homme–machine
 - Contrôler des périphériques (souris) via des gestes naturels
 
-## 🧩 Scripts inclus
-### 1️⃣ Hand Tracking – Détection et suivi des mains
+##  Scripts inclus
+### Hand Tracking – Détection et suivi des mains
 
-📄 **Fichier : `hand_tracking.py`**
+ #### Fichier : `hand_tracking.py`
 
 Ce script permet de détecter jusqu’à **deux mains** et d’afficher :
 - Les **21 points clés (landmarks)** de chaque main
 - Les **connexions** entre les doigts
 
-🔹 Fonctionnalités :
+#### Fonctionnalités :
 - Capture vidéo via la webcam
 - Détection et suivi des mains en temps réel
 - Affichage graphique des landmarks et des connexions
 - Arrêt du programme avec la touche **q**
 
-▶️ Lancer le script :
+ Lancer le script :
 ```bash
 python hand_tracking.py
 ```
 
-### 2️⃣ Hand Mouse Control – Contrôle de la souris par gestes
+### Hand Mouse Control – Contrôle de la souris par gestes
 
-📄  **Fichier :  `hand_mouse_control.py `**
+#### Fichier :  `hand_mouse_control.py `
 
 Ce script permet de contrôler la souris de l’ordinateur à l’aide de la main :
 - Le bout de l’index permet de déplacer le curseur
 - Le pincement entre l’index et le pouce simule un clic de souris
 
-🔹 Fonctionnalités :
+#### Fonctionnalités :
 - Détection de la main en temps réel via la webcam
 - Suivi du bout de l’index pour déplacer le curseur de la souris
 - Simulation d’un clic de souris par geste de **pincement** (index + pouce)
 - Affichage visuel des points de la main et du geste de clic
 
-▶️ Lancer le script :
+ Lancer le script :
 ```bash
 hand_mouse_control.py
 ```
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 - **Python**
 - **OpenCV** : capture et traitement vidéo
@@ -60,7 +60,7 @@ hand_mouse_control.py
 - **PyAutoGUI** : contrôle du curseur et clic de la souris
 - **Math** : calcul de distance entre les doigts
 
-## 📦 Installation
+## Installation
 ```bash
 pip install opencv-python mediapipe pyautogui
 ```

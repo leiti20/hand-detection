@@ -6,15 +6,12 @@ Ce repository contient deux projets basés sur la **vision par ordinateur** perm
 
 Les deux scripts utilisent **OpenCV** pour la capture vidéo et **MediaPipe Hands** pour la détection des points clés de la main.
 
----
 ## 🎯 Objectifs du projet
 
 - Comprendre le fonctionnement de **MediaPipe Hands**
 - Manipuler les **landmarks** (points clés) de la main
 - Appliquer la vision par ordinateur à une interaction homme–machine
 - Contrôler des périphériques (souris) via des gestes naturels
-
----
 
 ## 🧩 Scripts inclus
 ### 1️⃣ Hand Tracking – Détection et suivi des mains
@@ -54,7 +51,6 @@ Ce script permet de contrôler la souris de l’ordinateur à l’aide de la mai
 ```bash
 hand_mouse_control.py
 ```
----
 
 ## 🛠️ Technologies utilisées
 
@@ -64,7 +60,6 @@ hand_mouse_control.py
 - **PyAutoGUI** : contrôle du curseur et clic de la souris
 - **Math** : calcul de distance entre les doigts
 
---
 ## 📦 Installation
 ```bash
 pip install opencv-python mediapipe pyautogui

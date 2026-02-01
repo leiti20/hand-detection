@@ -69,5 +69,4 @@ hand_mouse_control.py
 ```bash
 pip install opencv-python mediapipe pyautogui
 ```
-```
 

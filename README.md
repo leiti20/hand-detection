@@ -1,6 +1,6 @@
 # 🖐️ Hand Tracking & Hand Mouse Control with OpenCV
 
-Ce repository contient deux projets basés sur la **vision par ordinateur** 
+Ce repository contient des projets basés sur la **vision par ordinateur** 
 Les scripts utilisent **OpenCV** pour la capture vidéo et **MediaPipe Hands** pour la détection des points clés de la main.
 
 ##  Objectifs du projet

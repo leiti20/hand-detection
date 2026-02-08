@@ -1,10 +1,7 @@
 # 🖐️ Hand Tracking & Hand Mouse Control with OpenCV
 
-Ce repository contient deux projets basés sur la **vision par ordinateur** permettant :
-1. La détection et le suivi des mains en temps réel
-2. Le contrôle de la souris à l’aide des gestes de la main
-
-Les deux scripts utilisent **OpenCV** pour la capture vidéo et **MediaPipe Hands** pour la détection des points clés de la main.
+Ce repository contient des projets basés sur la **vision par ordinateur** 
+Les scripts utilisent **OpenCV** pour la capture vidéo et **MediaPipe Hands** pour la détection des points clés de la main.
 
 ##  Objectifs du projet
 
@@ -49,7 +46,25 @@ Ce script permet de contrôler la souris de l’ordinateur à l’aide de la mai
 
  Lancer le script :
 ```bash
-hand_mouse_control.py
+python hand_mouse_control.py
+```
+### Hand Drawing – Dessiner avec l’index
+
+#### Fichier :  `hand_mouse_control.py `
+
+Ce script permet de dessiner avec l'index  :
+- Le bout de l’index permet de dessiner 
+
+#### Fonctionnalités :
+- Permet de dessiner sur l’écran en suivant le bout de l’index
+- Choix de couleur pour le dessin
+- Option pour effacer le dessin et recommencer
+- Utilise les landmarks de MediaPipe pour positionner le curseur de dessin
+- Arrêt du programme avec la touche q
+
+ Lancer le script :
+```bash
+python hand_drawing.py
 ```
 
 ##  Technologies utilisées
@@ -65,3 +80,5 @@ hand_mouse_control.py
 pip install opencv-python mediapipe pyautogui
 ```
 
+## Remarque 
+- Une webcam fonctionnelle est nécessaire

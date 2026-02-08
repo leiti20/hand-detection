@@ -70,7 +70,7 @@ def hand_drawing():
                 x = int(index_finger.x * w)
                 y = int(index_finger.y * h)
 
-                # --- sélection couleur / gomme ---
+                # sélection couleur / gomme 
                 if only_index_up:
                     for i in range(len(colors)):
                         cx = PAL_START_X + i * PAL_SPACING
@@ -85,7 +85,7 @@ def hand_drawing():
                         finger_in_ui = True
                         eraser_active = True
 
-                # --- dessin ---
+                # dessin 
                 if not finger_in_ui:
                     if only_index_up:
                         if not drawing:
@@ -127,7 +127,7 @@ def hand_drawing():
         mask = cv.threshold(mask, 1, 255, cv.THRESH_BINARY)[1]
         frame[mask > 0] = canvas[mask > 0]
 
-        # --- UI ---
+        #UI
         overlay = frame.copy()
         cv.rectangle(overlay, (0, 0),
                      (PAL_START_X + len(colors) * PAL_SPACING + 45, 75), (0, 0, 0), -1)
